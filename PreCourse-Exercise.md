@@ -202,9 +202,7 @@ Create a new <div> inside the 'card' div. Be sure your new <div> begins _after_ 
 
 ### 8.1 More Bio Containers
 
-Although we've added a new <div> to our code, you will notice we haven't made any visbile changes to the page. 
-
-Let's create (5) new <div> inside 'info' and assign the class names "name, profession, divider, bio, & button" respectively.
+Although we've added a new <div> to our code, you will notice that we have not made any visbile changes to the page. Let's create (5) new <div> inside 'info' and assign the class names 'name', 'profession','divider', 'bio', and 'button' respectively.
 
     <div class="card">
         <div class="profile">
