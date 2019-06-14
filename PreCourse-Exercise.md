@@ -316,7 +316,7 @@ To begin, lets change our white background. In this case, we want to change the 
 We should now have a nice lime background on our page.
 **Note: Identifying a color using the _hex _code is more effective when looking for exact color shades - alternatively using the words _'green'_ or _'blue'_ would have worked the same. Give it a try!
 
-## 10 Profile Header 
+## 10. Profile Header 
 
 We have structured our html to utilize container-divs that hold most of the content for our profile card. We have given that div a class name of 'card'. In the last example we were able to use the element selector, which is fine since there is only one page body. In the case of our divs, there are multiple `<div>` tags on the page and we don't need to change every div in the same way. To identify a particular div, we are going to identify the element by class name. 
 
@@ -420,7 +420,7 @@ We've added quite a bit of CSS to our code. Let's take a look at what we should 
 
 ![Midpoint](images/wppe-ss-midpoint.png)
 
-## 11 Styling the Profile Bio
+## 11. Styling the Profile Bio
 
 Our profile cards now how a nicely formatted header but lack the same continutity in the content section of our profile. In the next (3) steps we will be making slight modifications to the style and position of our fonts, adding appropriate spacing called padding and fixing up some minor issues in our code. 
 
