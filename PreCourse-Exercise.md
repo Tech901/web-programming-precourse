@@ -130,13 +130,13 @@ Open your 'index.html' file & type or copy the following lines of code. This is 
 Be sure each **open tag has a closing tag** except the Document Declaration at the very top of the page,  which is a self-closing tag 
 
 ## 7. Adding Container Divs
-One of the most commonly used elements in html is the <div> tag. It defines a division or section in an HTML document and is often used as a container that encapsulates other html elements. These divs are useful for breaking an html document structure into smaller chunks, and creates the flow of the page which can later be positioned and styled by css. 
+One of the most commonly used elements in html is the `<div>` tag. It defines a division or section in an HTML document and is often used as a container that encapsulates other html elements. These divs are useful for breaking an html document structure into smaller chunks, and creates the flow of the page which can later be positioned and styled by css. 
     
-A house is just a huge open rectangles without walls to breakup with space. <div> tags allow us to do the same with HTML. 
+A house is just a huge open rectangles without walls to breakup with space. `<div>` tags allow us to do the same with HTML. 
 
 Now that the barebones elements have been added. We want to add some container divs to our project. 
 
-Inside of the <body></body> tags add a new <div> with the class of 'card'. Your code should read like this 
+Inside of the <body></body> tags add a new `<div>` with the class of 'card'. Your code should read like this 
 
     <body>
         <div class="card"></div>
@@ -144,7 +144,7 @@ Inside of the <body></body> tags add a new <div> with the class of 'card'. Your 
    
 ### 7.1  
 
-Inside of the 'card' div lets create a new <div> with a class of 'profile'. You will notice that we often have tags within tags - this practice is called _nesting_
+Inside of the 'card' div lets create a new `<div>` with a class of 'profile'. You will notice that we often have tags within tags - this practice is called _nesting_
 
     <div class="card">
         <div class="profile"></div> 
@@ -152,7 +152,7 @@ Inside of the 'card' div lets create a new <div> with a class of 'profile'. You 
 
 ### 7.2 Adding an Image
 
-Create a new <div> inside of 'profile' with the class of 'profile-pic'
+Create a new `<div>` inside of 'profile' with the class of 'profile-pic'
 Now choose a photo to add as your profile picture. Add your photo to the 'images' folder.
 We will link to your photo by adding an image link inside of 'profile-pic' as shown below. 
 Be sure that you have named your image (mine is called logo) and add 'alt text' -- a quick description of your image. 
@@ -187,9 +187,7 @@ Your page should open in your default browser. If your code is correct, you will
 
 ## 8. Structuring the Bio
 
-Now we will add some information to our profile biography section of our profile
-
-Create a new <div> inside the 'card' div. Be sure your new <div> begins _after_ the 'profile' closing tag but _before_ the 'card' closing tags. Let's give this div a class of 'info'.
+Now we will add some information to our profile biography section of our profile. Create a new `<div>` inside the 'card' div. Be sure your new `<div>` begins _after_ the 'profile' closing tag but _before_ the 'card' closing tags. Let's give this div a class of 'info'.
 
     <div class="card">
         <div class="profile">
@@ -202,7 +200,7 @@ Create a new <div> inside the 'card' div. Be sure your new <div> begins _after_ 
 
 ### 8.1 More Bio Containers
 
-Although we've added a new <div> to our code, you will notice that we have not made any visbile changes to the page. Let's create (5) new <div> inside 'info' and assign the class names 'name', 'profession','divider', 'bio', and 'button' respectively.
+Although we've added a new div to our code, you will notice that we have not made any visbile changes to the page. Let's create (5) new `<div>` inside 'info' and assign the class names: 'name', 'profession','divider', 'bio', and 'button' respectively.
 
     <div class="card">
         <div class="profile">
@@ -235,7 +233,7 @@ Inside of first two (2) new divs, fill in information about yourself. Include yo
 
 ### 8.3 Elevator Pitch
 
-Let's add a couple of paragraphs to the bio div. To do this we will use the <p></p> tag to identify our text as a paragraph. In 1-2 short paragraphs tell us what your superpower is and why you would like to take this course. 
+Let's add a couple of paragraphs to the bio div. To do this we will use the `<p></p>` tag to identify our text as a paragraph. In 1-2 short paragraphs tell us what your superpower is and why you would like to take this course. 
 
     <!DOCTYPE html>
     <html>
@@ -266,7 +264,7 @@ Let's add a couple of paragraphs to the bio div. To do this we will use the <p><
 
 ## 9. HTML + CSS
 
-Now if you look at our page, we have a really nice image of ourselves and a few lines of content, but it isn't pretty. That's because we haven't styled any of our content with css. To add our css to the page, we first have to attach our external cascading style sheet to our html. We've already created a file called 'style.css'. This is the file where will will store our css. In order for our CSS to be applied to the html we have written, we are going to add a relative link to the document head. Add in this line of text in the 'head' tag, _after the closing 'title' tag. 
+Now if you look at our page, we have a really nice image of ourselves and a few lines of content, but it isn't pretty. That's because we haven't styled any of our content with css. To add our css to the page, we first have to attach our external cascading style sheet to our html. We've already created a file called 'style.css'. This is the file where will will store our css. In order for our CSS to be applied to the html we have written, we are going to add a relative link to the document head. Add in this line of text in the 'head' tag, _after_ the closing 'title' tag. 
 
     <link rel="stylesheet" href="style.css">
 
@@ -316,13 +314,13 @@ To begin, lets change our white background. In this case, we want to change the 
     }
 
 We should now have a nice lime background on our page.
-**Note: Identifying a color using the _hex _code is more effective when looking for exact color shades - alternatively using the words _'green' or _'blue' would have worked the same. Give it a try!
+**Note: Identifying a color using the _hex _code is more effective when looking for exact color shades - alternatively using the words _'green'_ or _'blue'_ would have worked the same. Give it a try!
 
 ## 10 Profile Header 
 
-We have structured our html to utilize container-divs that hold most of the content for our profile card. We have given that div a class name of 'card'. In the last example we were able to use the element selector, which is fine since there is only one page body. In the case of our divs, there are multiple 'divs' on the page and we don't need to change every div. To identify a particular div, we are going to identify the element by class name. 
+We have structured our html to utilize container-divs that hold most of the content for our profile card. We have given that div a class name of 'card'. In the last example we were able to use the element selector, which is fine since there is only one page body. In the case of our divs, there are multiple `<div>` tags on the page and we don't need to change every div in the same way. To identify a particular div, we are going to identify the element by class name. 
 
-Copy the following code to your style.css page after your body css rule. This CSS rule set is going to apply key styles to our _.card _div including changing the background color, centering the card, rounding the corners, and setting a maximum width of the container. 
+Copy the following code to your style.css page after your body css rule. This CSS rule set is going to apply key styles to our _.card _`<div>` including changing the background color, centering the card, rounding the corners, and setting a maximum width of the container. 
 
 **Don't worry if it doesn't all make perfect sense yet, it is however, important that your syntax is correct and you are seeing the changes in the browser.
 
@@ -337,16 +335,16 @@ Copy the following code to your style.css page after your body css rule. This CS
     }
 
 **Note:** CSS Rules:
-Class Name Selectors begin with '.'
-ID Selectors begin with #
-CSS Rule Sets must have opening and closing brackers{}
-Each individual CSS rule should be closed with a semi-colon ;
+Class Name Selectors begin with `'.'`
+ID Selectors begin with `#`
+CSS Rule Sets must have opening and closing brackers `{ }`
+Each individual CSS rule should be closed with a semi-colon `;`
 
 ### 10.1
 
 Go back and take a look at your html code. We have structured our project to have two main sections, the profile section & the info section. We'll start with the profile header section. 
 
-Add the following lines of code to your css file to add a background image and background color to our inner div
+Add the following lines of code to your css file to add a background image and background color to our _profile_ `<div>`
 
     .profile {
         border-radius:4px 4px 0px 0px;
@@ -373,7 +371,7 @@ Add the '.profile-pic img' styles to your 'style.ccss' file
         width:200px;
         height:200px;
         transform: scale(0.6);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)7
     }
 
 Now we have a nice rounded profile picture, but it's aligned to the left of the screen. Add the CSS styles below to correct the alignment your profile picture. Although this will help us to center the profile picture, we are actually going to apply this style to the entire profile container so lets place this css before the '.profile-pic img' css rule set
@@ -453,7 +451,7 @@ We won't go through each portion, but we can take a look back at our html div's 
 
 ### 11.1 Div to Divider
 
-We created a div with the class name _divider in our html but the div is currently empty. Instead of adding content to the div, we are going to create a horizontal rule using CSS. Add the following CSS rule set to your css. Then change the values of divider height & width and see how it changes on our webpage.
+We created a `<div>` with the class name _divider_ in our html but the div is currently empty. Instead of adding content to the div, we are going to create a horizontal rule using CSS. Add the following CSS rule set to your css. Then change the values of divider height & width and see how it changes on our webpage.
 
     .divider {
         background-color: #949594;
@@ -480,7 +478,7 @@ Now our profile is starting to really look nice! The last few things we want to 
 We've previously created a _button div in our html but we left it empty. Take a peek back in your html and a your link & and display name to the button. Be sure your link is formatted with your email address.
 
     <div class="button
-        a href="mailto:websupport@tech901.org" target="_blank">Let's Connect</a>
+        a href="mailto:websupport@tech901.org" target="_blank">Let's Connect
     </div>
 
 Then add the associated css to style your link into a nice flat button
