@@ -17,7 +17,7 @@ GitHub is one of the many crown jewels of development. It is a cloud-based appli
 
 ### Setup A Github Account 
 
-If you already have a github account, you may continue to use thw same account for the duration of this course. 
+If you already have a github account, you may continue to use the same account for the duration of this course. 
 
 To setup a new Github account, [Visit the Github website](https://www.github.com) to signup.
 
@@ -45,7 +45,7 @@ Additionally, tags can also have attributes which adds additional properties to 
 
 CSS (Cascading Style Sheets) is a markup language for describing the presentation of web pages. Using CSS, we are able to style the appearance of a webpage; the background colors of a page, the position of an image, the color and typeface of fonts, and animations can be achieved by using CSS. This is why HTML/CSS are usually joined at the hip, they naturally compliment each other. Although HTML & CSS are often coupled together, it is important to remember that they are standalone languages.
 
-CSS can be applied to HTML is three ways: inline, internally, and externally. Inline styles can be applied directly to tags using the style attribute. Internal styles are applied to the entire page by placing all of the CSS styles in the document head or styles can be written in separate CSS file and linked to your HTML. While there is technically nothing wrong with inline or internal styles, css should be written separately in its own standalone file that can be read by your html. As your CSS becomes more complex, it may even be broken into separate pages or organized by components using SCSS. This will keep your code clean, organized, and as lightweight as possible.
+CSS can be applied to HTML three ways: inline, internally, and externally. Inline styles can be applied directly to tags using the style attribute. Internal styles are applied to the entire page by placing all of the CSS styles in the document head or styles can be written in separate CSS file and linked to your HTML. While there is technically nothing wrong with inline or internal styles, css should be written separately in its own standalone file that can be read by your html. As your CSS becomes more complex, it may even be broken into separate pages or organized by components using SCSS. This will keep your code clean, organized, and as lightweight as possible.
 
 CSS is structured using a variety of rules that are used to identify parts of a page and the styles that should apply to them. A rule set consists of one or more declarations specifying property:value pairs that change the appearance of particular elements. While HTML uses tags, CSS uses selectors to identify particular html elements. Aside from selecting elements by name, we could also use classes or ID's as we will learn later in the course.  If we wanted to change the color of our html paragraph above, we could use this CSS.
 
@@ -67,7 +67,7 @@ Simply put, a _Developer Environment_ is just a process for setting up a set of 
 
 For larger projects or when working with organizations it is important that your dev environments closely match from local, to staging, to production. This will minimize errors, and issues that will arise when deploying code from one environment to the next.
 
-To complete this exercise, we'll only need one important tool in your dev environment, a text editor.As mentioned before HTML is simply content marked-up to give it meaning and structure so the only real requirement is any text editor. Even notepad would due, but choosing a more advanced text editor designed for coding has its perks. There are several text editors available and you are welcome to choose any one you like, but for the purposes of this exercise, we will be using Visual Studio Code.
+To complete this exercise, we'll only need one important tool in your dev environment, a text editor. As mentioned, HTML is simply content marked-up to give it meaning and structure so the only real requirement is any text editor. Even notepad would due, but choosing a more advanced text editor designed for coding has its perks. There are several text editors available and you are welcome to choose any one you like, but for the purposes of this exercise, we will be using Visual Studio Code.
 
 ### Getting Started w/ VSCode
 
@@ -144,7 +144,7 @@ Inside of the <body></body> tags add a new <div> with the class of 'card'. Your 
    
 ### 7.1  
 
-Inside of the 'card' div lets create a new div with a class of 'profile'. You will notice that we often have tags within tags - this practice is called nesting
+Inside of the 'card' div lets create a new <div> with a class of 'profile'. You will notice that we often have tags within tags - this practice is called _nesting_
 
     <div class="card">
         <div class="profile"></div> 
@@ -152,7 +152,7 @@ Inside of the 'card' div lets create a new div with a class of 'profile'. You wi
 
 ### 7.2 Adding an Image
 
-Create a new div inside of 'profile' with the class of 'profile-pic'
+Create a new <div> inside of 'profile' with the class of 'profile-pic'
 Now choose a photo to add as your profile picture. Add your photo to the 'images' folder.
 We will link to your photo by adding an image link inside of 'profile-pic' as shown below. 
 Be sure that you have named your image (mine is called logo) and add 'alt text' -- a quick description of your image. 
@@ -189,7 +189,7 @@ Your page should open in your default browser. If your code is correct, you will
 
 Now we will add some information to our profile biography section of our profile
 
-Create a new div inside the 'card' div. Be sure your new div begins _after_ the 'profile' closing tag but _before_ the 'card' closing tags. Let's give this div a class of 'info'.
+Create a new <div> inside the 'card' div. Be sure your new <div> begins _after_ the 'profile' closing tag but _before_ the 'card' closing tags. Let's give this div a class of 'info'.
 
     <div class="card">
         <div class="profile">
@@ -202,9 +202,9 @@ Create a new div inside the 'card' div. Be sure your new div begins _after_ the 
 
 ### 8.1 More Bio Containers
 
-Although we've added a new div to our code, you will notice we haven't made any visbile changes to the page. 
+Although we've added a new <div> to our code, you will notice we haven't made any visbile changes to the page. 
 
-Let's create (5) new divs inside 'info' and assign the class names "name, profession, divider, bio, & button" respectively.
+Let's create (5) new <div> inside 'info' and assign the class names "name, profession, divider, bio, & button" respectively.
 
     <div class="card">
         <div class="profile">
@@ -229,7 +229,7 @@ Inside of first two (2) new divs, fill in information about yourself. Include yo
     <div class="info">
         <div class="name">Tech901</div>
         <div class="profession">Web Developer | Tech Instructor</div>
-        <div class="divider"></div>
+        <div class="divider"></div
         <div class="bio"></div>
         <div class="button"></div>
     </div>
@@ -237,7 +237,7 @@ Inside of first two (2) new divs, fill in information about yourself. Include yo
 
 ### 8.3 Elevator Pitch
 
-Let's add a couple of paragraphs to the bio div. To do this we'll use the <p></p> tag to identify our text as a paragraph. In 1-2 short paragraphs tell us what your superpower is and why you would like to take this course. 
+Let's add a couple of paragraphs to the bio div. To do this we will use the <p></p> tag to identify our text as a paragraph. In 1-2 short paragraphs tell us what your superpower is and why you would like to take this course. 
 
     <!DOCTYPE html>
     <html>
