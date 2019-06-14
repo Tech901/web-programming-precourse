@@ -63,7 +63,7 @@ Take a moment to review some of the HTML & CSS Structure currently on this page 
 
 ### Developer Environments 
 
-Simply put, a _Developer Environment_ is just a process for setting up a set of tools and software that will allow you to write programs and applications for a particular language or platform. Each developer's environment setup may be different depending on personal preferences, languages, and use cases. Setting up your dev environment can be a tedious process, but learning your code preferences and the developing your personal techStack will save you ton's of time as you begin to create programs and applications. This step will help you setup the most basic tools you'll need to begin learning about web programming. This list will continue to grow and evolve as you grow as a developer and change from OS to OS.
+Simply put, a _Developer Environment_ is just a process for setting up a set of tools and software that will allow you to write programs and applications for a particular language or platform. Each developer's environment setup may be different depending on personal preferences, languages, and use cases. Setting up your dev environment can be a tedious process, but learning your code preferences and the developing your personal techStack will save you ton's of time as you begin to create programs and applications. This step will help you setup the most basic tools you'll need to begin learning about web programming. This list will continue to grow and evolve as you grow as a developer and change from Operating System to Operating System.
 
 For larger projects or when working with organizations it is important that your dev environments closely match from local, to staging, to production. This will minimize errors, and issues that will arise when deploying code from one environment to the next.
 
@@ -71,7 +71,7 @@ To complete this exercise, we'll only need one important tool in your dev enviro
 
 ### Getting Started w/ VSCode
 
-Navigate to the [Visual Studio Code Website](https://www.code.visualstudio.com) to download the correct version for your OS. Stick with the "stable build" for now. Once it is downloaded,run the installer.
+Navigate to the [Visual Studio Code Website](https://www.code.visualstudio.com) to download the correct version for your Operating System (usually MacOS or Windows 7,8,10 etc). Stick with the "stable build" for now. Once it is downloaded,run the installer.
 
 Feel free to get to know the VSCode interface using the VSCode Interactive Playground or their [getting started videos](https://code.visualstudio.com/docs/introvideos/basics) posted on the site.
 
