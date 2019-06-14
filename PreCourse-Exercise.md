@@ -305,9 +305,9 @@ Your code should now look similar to this.
 
 Now that we have defined the structure and layout of our page, we can start to style each of the elements. As we start to add CSS be sure to save often and check for your results in the browser.
 
-1. Open the 'style.css' file in the editor 
+Open the 'style.css' file in the editor 
 
-To begin, lets change our white background. In this case, we want to change the entire background of the page so we will be using the 'body' selector to identify the body of the page. Add the following CSS Rule to your file and CTRL + S to save the file. 
+To begin, lets change our white background. In this case, we want to change the entire background of the page so we will be using the 'body' selector to identify the body of the page. Add the following CSS Rule to your file and `CTRL + S` to save the file. 
  
     body {
         background-color: #85bc00;
@@ -320,7 +320,7 @@ We should now have a nice lime background on our page.
 
 We have structured our html to utilize container-divs that hold most of the content for our profile card. We have given that div a class name of 'card'. In the last example we were able to use the element selector, which is fine since there is only one page body. In the case of our divs, there are multiple `<div>` tags on the page and we don't need to change every div in the same way. To identify a particular div, we are going to identify the element by class name. 
 
-Copy the following code to your style.css page after your body css rule. This CSS rule set is going to apply key styles to our _.card _`<div>` including changing the background color, centering the card, rounding the corners, and setting a maximum width of the container. 
+Copy the following code to your style.css page after your body css rule. This CSS rule set is going to apply key styles to our _card_ `<div>` including changing the background color, centering the card, rounding the corners, and setting a maximum width of the container. 
 
 **Don't worry if it doesn't all make perfect sense yet, it is however, important that your syntax is correct and you are seeing the changes in the browser.
 
