@@ -1,8 +1,11 @@
 # Web Programming Pre-Course Exercise
 
-This tutorial is intended to briefly introduce users to html/css and guide users on how to complete the Into To HMTL Code Introductory Exercise. It is not, however, a fully-complete tutorial on the HTML/CSS languages. We have pulled together all the information you need in this document.
+This exercise is **required** for admission to the Tech901 Web Programming Course. This exercise does not presume or require any prior coding knowledge, it will simply help our team test your natural ability to succeed as a developer and introduce you to web programming. 
+It is not, however, a fully-complete tutorial on the HTML/CSS languages. We have pulled together all the information you need in this document.
 
-No coding knowledge is needed to successfully complete this challenge, but these topics and others will be covered in more detail throughout the span of this course. You will be expected to learn languages at a deeper level during the Web Programming class, but for now we’ll keep it simple. There is no reason for you not to succeed with this challenge, even if you are a complete beginner, if you follow this guide.
+No coding knowledge is needed to successfully complete this challenge, but these topics and others will be covered in more detail throughout the span of this course. You will be expected to learn languages at a deeper level during the Web Programming Course. There is no reason for you not to succeed with this challenge, even if you are a complete beginner, if you follow this guide.
+
+If you get stuck at any point feel free to reach out to our [Web Support Team](websupport@tech901.org) for assistance. We can usually get back to your withing 1 business day.
 
 **You can do this!**
 
@@ -20,6 +23,8 @@ To setup a new Github account, [Visit the Github website](https://www.github.com
 
 ![Signup](images/wppe-ss-git.png)
 
+
+Remember these login credentials, we will return to GitHub later in the exercise.
 
 ## 2. Introduction to HTML
 
@@ -58,7 +63,7 @@ Take a moment to review some of the HTML & CSS Structure currently on this page 
 
 ### Developer Environments 
 
-Simply put, a _Developer _Environment is just a process for setting up a set of tools and software that will allow you to write programs and applications for a particular language or platform. Each developer's environment setup may be different depending on personal preferences, languages, and use cases. Setting up your dev environment can be a tedious process, but learning your code preferences and the developing your personal techStack will save you ton's of time as you begin to create programs and applications. This step will help you setup the most basic tools you'll need to begin learning about web programming. This list will continue to grow and evolve as you grow as a developer and change from OS to OS.
+Simply put, a _Developer Environment_ is just a process for setting up a set of tools and software that will allow you to write programs and applications for a particular language or platform. Each developer's environment setup may be different depending on personal preferences, languages, and use cases. Setting up your dev environment can be a tedious process, but learning your code preferences and the developing your personal techStack will save you ton's of time as you begin to create programs and applications. This step will help you setup the most basic tools you'll need to begin learning about web programming. This list will continue to grow and evolve as you grow as a developer and change from OS to OS.
 
 For larger projects or when working with organizations it is important that your dev environments closely match from local, to staging, to production. This will minimize errors, and issues that will arise when deploying code from one environment to the next.
 
@@ -71,6 +76,7 @@ Navigate to the [Visual Studio Code Website](https://www.code.visualstudio.com) 
 Feel free to get to know the VSCode interface using the VSCode Interactive Playground or their [getting started videos](https://code.visualstudio.com/docs/introvideos/basics) posted on the site.
 
 ### Installing Live Server
+
 Coding your work for static pages can become cumbersome when you can't visually see the result of your changes immediately. As you become more comfortable and confident with code it becomes second nature, but for now its nice to see what the results will look like. This will also help us immediately see errors. There are several ways to locally monitor you development or create local servers but for this exercise, we will use the Live Server Extension to streamline the process. 
 
 1. Open VSCode Editor
@@ -121,45 +127,35 @@ Open your 'index.html' file & type or copy the following lines of code. This is 
         </body>
     </html>
 
-Be sure each open tag has a closing tag except the Document Declaration which is a self-closing tag
+Be sure each **open tag has a closing tag** except the Document Declaration at the very top of the page,  which is a self-closing tag 
 
-## 7 Adding Container Divs
-Now that the barebones elements have been added. We want to add some container divs to our project. These div components will simply define some key parts of our project and contain much of our content on the page. 
+## 7. Adding Container Divs
+One of the most commonly used elements in html is the <div> tag. It defines a division or section in an HTML document and is often used as a container that encapsulates other html elements. These divs are useful for breaking an html document structure into smaller chunks, and creates the flow of the page which can later be positioned and styled by css. 
+    
+A house is just a huge open rectangles without walls to breakup with space. <div> tags allow us to do the same with HTML. 
+
+Now that the barebones elements have been added. We want to add some container divs to our project. 
 
 Inside of the <body></body> tags add a new <div> with the class of 'card'. Your code should read like this 
 
-    <!DOCTYPE html>
-    <html>
-        <head>
-            <title>Profile Card</title>
-        </head>
-        <body>
-            <div class="card"></div>
-        </body>
-    </html>
-
+    <body>
+        <div class="card"></div>
+    </body>
+   
 ### 7.1  
 
 Inside of the 'card' div lets create a new div with a class of 'profile'. You will notice that we often have tags within tags - this practice is called nesting
 
-    <!DOCTYPE html>
-    <html>
-        <head>
-            <title>Profile Card</title>
-        </head>
-        <body>
-            <div class="card">
-                <div class="profile"></div> 
-            </div>
-        </body>
-    </html>
+    <div class="card">
+        <div class="profile"></div> 
+    </div>
 
 ### 7.2 Adding an Image
 
 Create a new div inside of 'profile' with the class of 'profile-pic'
 Now choose a photo to add as your profile picture. Add your photo to the 'images' folder.
 We will link to your photo by adding an image link inside of 'profile-pic' as shown below. 
-Be sure that you have named your image (mine is called logo) and that you add some 'alt text' -- a quick description of your image. 
+Be sure that you have named your image (mine is called logo) and add 'alt text' -- a quick description of your image. 
 
     <div class="profile-pic">
         <img src="images/logo.png" alt="Tech901 Logo">
@@ -169,9 +165,10 @@ Be sure that you have named your image (mine is called logo) and that you add so
                 
 Let's take a peak at what we've created so far. To do this we will be using the Live Server Extension. Save your 'index.html' file 
 
-1. Open the Command Pallete by pressing F1 or CTRL + SHIFT + P and type Live Server: Open With Live Server to start a server or type Live Server: Stop Live Server to stop a server
+1. Open the Command Pallete by pressing F1 or CTRL + SHIFT + P 
+2. Type **_Live Server: Open With Live Server_** to start a server or type Live Server: Stop Live Server to stop a server
 
-Your page should open in your default browser. If your code is correct you will have a blank page with an image.
+Your page should open in your default browser. If your code is correct, you will have a blank page with an image.
 
     <!DOCTYPE html>
     <html>
@@ -179,13 +176,12 @@ Your page should open in your default browser. If your code is correct you will 
     <head>
     <title> Profile Card</title>
     <body>
-    <div class="card">
-        <div class="profile">
-            <div class="profile-pic">
-                <img src="images/logo.png" alt="Tech901 Logo">
-            </div>
-        </div>    
-    </div>
+        <div class="card">
+            <div class="profile">
+                <div class="profile-pic">
+                    <img src="images/logo.png" alt="Tech901 Logo">
+            </div>    
+        </div>
     </body>
     <html>
 
@@ -193,26 +189,16 @@ Your page should open in your default browser. If your code is correct you will 
 
 Now we will add some information to our profile biography section of our profile
 
-Create a new div inside the 'card' div. Be sure your new div begins _after the 'profile' closing tag but _before the 'card' closing tags. Let's give this div a class of 'info'.
+Create a new div inside the 'card' div. Be sure your new div begins _after_ the 'profile' closing tag but _before_ the 'card' closing tags. Let's give this div a class of 'info'.
 
-    <!DOCTYPE html>
-    <html>
-
-    <head>
-        <title> Profile Card</title>
-    </head>
-
-    <body>
-        <div class="card">
-            <div class="profile">
-                <div class="profile-pic">
-                    <img src="images/logo.png" alt="Tech901 Logo">
-                </div>
+    <div class="card">
+        <div class="profile">
+            <div class="profile-pic">
+                <img src="images/logo.png" alt="Tech901 Logo">
             </div>
-            <div class="info"></div>
         </div>
-    </body>
-    <html>
+        <div class="info"></div>
+    </div>
 
 ### 8.1 More Bio Containers
 
@@ -220,60 +206,34 @@ Although we've added a new div to our code, you will notice we haven't made any 
 
 Let's create (5) new divs inside 'info' and assign the class names "name, profession, divider, bio, & button" respectively.
 
-    <!DOCTYPE html>
-    <html>
-
-    <head>
-        <title> Profile Card</title>
-    </head>
-
-    <body>
-        <div class="card">
-            <div class="profile">
-                <div class="profile-pic">
-                    <img src="images/logo.png" alt="Tech901 Logo">
-                </div>
-            </div>
-            <div class="info">
-                <div class="name"></div>
-                <div class="profession"></div>
-                <div class="divider"></div>
-                <div class="bio"></div>
-                <div class="button"></div>
+    <div class="card">
+        <div class="profile">
+            <div class="profile-pic">
+                <img src="images/logo.png" alt="Tech901 Logo">
             </div>
         </div>
-    </body>
-    <html>
+        <div class="info">
+            <div class="name"></div>
+            <div class="profession"></div>
+            <div class="divider"></div>
+            <div class="bio"></div>
+            <div class="button"></div>
+        </div>
+    </div>
 
 ### 8.2 Getting to Know You
 Be sure to continuously save your code and check for errors. Now we want to begin to populate our elements with information about you. 
 
 Inside of first two (2) new divs, fill in information about yourself. Include your name & profession. Save your work to see your changes reflected in your webpage.
 
-    <!DOCTYPE html>
-    <html>
-
-    <head>
-        <title> Profile Card</title>
-    </head>
-
-    <body>
-        <div class="card">
-            <div class="profile">
-                <div class="profile-pic">
-                    <img src="images/logo.png" alt="Tech901 Logo">
-                </div>
-            </div>
-            <div class="info">
-                <div class="name">Tech901</div>
-                <div class="profession">Web Developer | Tech Instructor</div>
-                <div class="divider"></div>
-                <div class="bio"></div>
-                <div class="button"></div>
-            </div>
-        </div>
-    </body>
-    <html>
+    <div class="info">
+        <div class="name">Tech901</div>
+        <div class="profession">Web Developer | Tech Instructor</div>
+        <div class="divider"></div>
+        <div class="bio"></div>
+        <div class="button"></div>
+    </div>
+ 
 
 ### 8.3 Elevator Pitch
 
@@ -336,7 +296,7 @@ Your code should now look similar to this.
                 <div class="divider"></div>
                 <div class="bio">
                     <p>We are a Tech organization focused on Powering Memphis Technology by helping students reach their technical career goals through extensive training and certification programs.</p>
-                    <p>What's your superpower? </p>
+                    <p>What's your superpower?</p>
                 </div>
                 <div class="button"></div>
             </div>
@@ -378,6 +338,12 @@ Copy the following code to your style.css page after your body css rule. This CS
         max-width: 350px;
     }
 
+**Note:** CSS Rules:
+Class Name Selectors begin with '.'
+ID Selectors begin with #
+CSS Rule Sets must have opening and closing brackers{}
+Each individual CSS rule should be closed with a semi-colon ;
+
 ### 10.1
 
 Go back and take a look at your html code. We have structured our project to have two main sections, the profile section & the info section. We'll start with the profile header section. 
@@ -409,7 +375,7 @@ Add the '.profile-pic img' styles to your 'style.ccss' file
         width:200px;
         height:200px;
         transform: scale(0.6);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
     }
 
 Now we have a nice rounded profile picture, but it's aligned to the left of the screen. Add the CSS styles below to correct the alignment your profile picture. Although this will help us to center the profile picture, we are actually going to apply this style to the entire profile container so lets place this css before the '.profile-pic img' css rule set
@@ -538,7 +504,7 @@ Then add the associated css to style your link into a nice flat button
 
 ## 12. Loose Ends 
 
-Now that we've created a sleek profile. We do have a few loose ends to tie up. If you're like most people, your bio ran a little long. So to help with readability, go back to the 'bio' css rule set and decrease the font size to 12 or 14px.
+Now that we've created a sleek profile. We do have a few loose ends to tie up. If you're like most people, your bio ran a little long. So to help with readability, go back to the 'bio' css rule set and **decrease the font size** to 12 or 14px. Also while we love our brand colors, this profile is all you! Take a shot at **changing your background colors** and **profile header images.**
  
 Lets add a quick css animation to our profile image. We will add this css to the hover state of the profile image that will add a smooth zoom on the hover.
 
@@ -548,12 +514,13 @@ Lets add a quick css animation to our profile image. We will add this css to the
     }
 
 ## 13. Submitting Your Results
-You've just completed your first code exercise! If you're still in love with learning more about code, we want to see your work. Draft an email to websupport@tech901.org with the link to your GitHub Repo and you'll be hearing from us soon.
+You've just completed your first code exercise! If you're still in love with learning more about code, we want to see your work. This exercise is **required** to submitted to our team for review before a prospective student can be admitted to our Web Programming Program. Draft an email to websupport@tech901.org with the link to your GitHub Repo. 
 
 1. Sign-In to Your Github Account
-2. Create a New Repository 
-3. Upload your project Folder
-4. Email websupport@tech901.org with your github repo link
+2. Create a New Repository (Top left corner)
+3. Give Your Repo a Name like Tech901
+5. Upload your project Folder
+6. Email websupport@tech901.org with your github repo link
 
 Good Luck!
 
