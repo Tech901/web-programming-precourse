@@ -119,6 +119,7 @@ Now that we have a project folder, we will use this folder to store all of the f
 6. Name this file 'style.css'
 7. Repeat Step #3 - Create a new folder - name it 'images'
 Be sure your new folder is inside your 'lastname-profile' folder
+
 ![VSFile](images/wppe-ss-vs-file.png)
 
 ## 6. HTML Skeleton
@@ -472,7 +473,7 @@ Now our profile is starting to really look nice! The last few things we want to 
 We've previously created a _button div in our html but we left it empty. Take a peek back in your html and a your link & and display name to the button. Be sure your link is formatted with your email address.
 
     <div class="button
-        a href="mailto:websupport@tech901.org" target="_blank">Let's Connect
+        a href="mailto:websupport@tech901.org" target="_blank">Let's Connect</a.
     </div>
 
 Then add the associated css to style your link into a nice flat button
@@ -480,12 +481,12 @@ Then add the associated css to style your link into a nice flat button
     .button {
         font-family: "Lato", sans-serif;
         background-color: #003763;
-        color: #fff;
+        colr: #fff;
         border: none;
         font-size: 18px;
         margin: 1rem 0;
         padding: 13px 25px;
-    }
+    
 
     .button a {
         color: #fff;
@@ -507,8 +508,11 @@ Lets add a quick css animation to our profile image. We will add this css to the
 You've just completed your first code exercise! If you're still in love with learning more about code, we want to see your work. This exercise is **required** to submitted to our team for review before a prospective student can be admitted to our Web Programming Program. Draft an email to websupport@tech901.org with the link to your GitHub Repo. 
 
 1. Sign-In to Your Github Account
-2. Create a New Repository (Top left corner)
-3. Give Your Repo a Name like Tech901
+2. Create a New Repository (Plus Sign, Top left corner, near profile image)
+
+![GitRepo](images/wppe-ss-github-repo.png)
+
+3. Give Your Repo a Name, like Tech901
 5. Upload your project Folder
 6. Email websupport@tech901.org with your github repo link
 
