@@ -5,7 +5,7 @@ It is not, however, a fully-complete tutorial on the HTML/CSS languages. We have
 
 No coding knowledge is needed to successfully complete this challenge, but these topics and others will be covered in more detail throughout the span of this course. You will be expected to learn languages at a deeper level during the Web Programming Course. There is no reason for you not to succeed with this challenge, even if you are a complete beginner, if you follow this guide.
 
-If you get stuck at any point feel free to reach out to our [Web Support Team](websupport@tech901.org) for assistance. We can usually get back to your withing 1 business day.
+If you get stuck at any point feel free to reach out to our [Web Support Team](websupport@tech901.org) for assistance. We can usually get back to your withing 1 business day. 
 
 **You can do this!**
 
@@ -75,7 +75,7 @@ Navigate to the [Visual Studio Code Website](https://www.code.visualstudio.com) 
 
 Feel free to get to know the VSCode interface using the VSCode Interactive Playground or their [getting started videos](https://code.visualstudio.com/docs/introvideos/basics) posted on the site.
 
-### Installing Live Server
+### Live Server Extension
 
 Coding your work for static pages can become cumbersome when you can't visually see the result of your changes immediately. As you become more comfortable and confident with code it becomes second nature, but for now its nice to see what the results will look like. This will also help us immediately see errors. There are several ways to locally monitor you development or create local servers but for this exercise, we will use the Live Server Extension to streamline the process. 
 
@@ -86,9 +86,13 @@ Coding your work for static pages can become cumbersome when you can't visually 
 4. Install the Extension
 5. Close & Restart VSCode 
 
+![LiveServer](images/wppe-ss-live-server.png)
+
 ## 5. Exercise Introduction
 
 In this tutorial, you will create a webpage using html/css that gives a brief profile bio of yourself. Checkout the finished project below! So far we have installed a text editor and added an extension that will allow us to view our code as we create it.
+
+**Note:** Use this exercise to learn the basic concepts not as a comprehensive guide. As you complete each task, be sure to check your code for syntax errors throughout. 
 
 ![Final](images/wppe-ss-final.gif)
 
@@ -109,8 +113,11 @@ Now that we have a project folder, we will use this folder to store all of the f
 2. Open the File Menu & Select Open Folder (Choose the folder we just created)
 3. Right-Click below the open folder in the VSCode Editor & Select New File
     Alternatively you can use the 'New File' Shortcut to the right your folder name
-4. Select New File name your file 'index.html'
-5. Repeat Step 3 - Create a new folder - name it 'images'
+4. Select New File 
+5. Name this file 'index.html'
+5. Create another new file 
+6. Name this file 'style.css'
+7. Repeat Step #3 - Create a new folder - name it 'images'
 Be sure your new folder is inside your 'lastname-profile' folder
 ![VSFile](images/wppe-ss-vs-file.png)
 
@@ -132,16 +139,24 @@ Be sure each **open tag has a closing tag** except the Document Declaration at t
 ## 7. Adding Container Divs
 One of the most commonly used elements in html is the `<div>` tag. It defines a division or section in an HTML document and is often used as a container that encapsulates other html elements. These divs are useful for breaking an html document structure into smaller chunks, and creates the flow of the page which can later be positioned and styled by css. 
     
-A house is just a huge open rectangles without walls to breakup with space. `<div>` tags allow us to do the same with HTML. 
+A house is just a huge open rectangle without walls to breakup with space. `<div>` tags allow us to break up the spaces with HTML. 
 
 Now that the barebones elements have been added. We want to add some container divs to our project. 
 
 Inside of the <body></body> tags add a new `<div>` with the class of 'card'. Your code should read like this 
+    
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Profile Card</title>
+        </head>
+        <body>
+            <div class="card"></div>
+        </body>
+    </html> 
 
-    <body>
-        <div class="card"></div>
-    </body>
-   
+** Congrats!** You have created your first lines of code. Moving forward, we will continue to build on this code with smaller snippets so don't worry if some tags aren't shown - don't delete them, keep adding to your base structure unless otherwise instructed. 
+
 ### 7.1  
 
 Inside of the 'card' div lets create a new `<div>` with a class of 'profile'. You will notice that we often have tags within tags - this practice is called _nesting_
@@ -212,7 +227,7 @@ Although we've added a new div to our code, you will notice that we have not mad
             <div class="name"></div>
             <div class="profession"></div>
             <div class="divider"></div>
-            <div class="bio"></div>
+            <div class="bio">
             <div class="button"></div>
         </div>
     </div>
@@ -235,36 +250,15 @@ Inside of first two (2) new divs, fill in information about yourself. Include yo
 
 Let's add a couple of paragraphs to the bio div. To do this we will use the `<p></p>` tag to identify our text as a paragraph. In 1-2 short paragraphs tell us what your superpower is and why you would like to take this course. 
 
-    <!DOCTYPE html>
-    <html>
-
-    <head>
-        <title> Profile Card</title>
-    </head>
-
-    <body>
-        <div class="card">
-            <div class="profile">
-                <div class="profile-pic">
-                    <img src="images/logo.png" alt="Tech901 Logo">
-                </div>
-            </div>
-            <div class="info">
-                <div class="name">Tech901</div>
-                <div class="profession">Web Developer | Tech Instructor </div>
-                <div class="divider"></div>
-                <div class="bio">
-                    <p>We are a Tech organization focused on Powering Memphis Technology by helping students reach their technical career goals through extensive training and certification programs.</br>What's your superpower?</p>
-                </div>
-                <div class="button"></div>
-            </div>
-        </div>
-    </body>
-    <html>
+    <div class="bio">
+        <p>We are a Tech organization focused on Powering Memphis Technology by helping students reach their technical career goals through extensive training and certification programs.</br>What's your superpower?</p>
+    </div>
 
 ## 9. HTML + CSS
 
-Now if you look at our page, we have a really nice image of ourselves and a few lines of content, but it isn't pretty. That's because we haven't styled any of our content with css. To add our css to the page, we first have to attach our external cascading style sheet to our html. We've already created a file called 'style.css'. This is the file where will will store our css. In order for our CSS to be applied to the html we have written, we are going to add a relative link to the document head. Add in this line of text in the 'head' tag, _after_ the closing 'title' tag. 
+Now if you look at our page, we have a really nice image of ourselves and a few lines of content, but it isn't pretty. That's because we haven't styled any of our content with css. To add our css to the page, we first have to attach our external cascading style sheet to our html. We've already created a file called 'style.css'. This is the file where will will store our css. Open your css file in the text editor. 
+
+In order for our CSS to be applied to the html we have written, we are going to add a relative link to the document head. Add in this line of text in the 'head' tag, _after_ the closing 'title' tag. 
 
     <link rel="stylesheet" href="style.css">
 
@@ -353,7 +347,7 @@ Add the following lines of code to your css file to add a background image and b
         url("http://tech901.org/wp-content/uploads/2018/08/slider-background-e1552578493505.png");
         background-position: center center;
         background-size: cover;
-        background-color:#003763;
+        background-color:#003763
     }
 
 ![10.1 Preview](images/wppe-ss-94.png)
@@ -371,14 +365,14 @@ Add the '.profile-pic img' styles to your 'style.ccss' file
         width:200px;
         height:200px;
         transform: scale(0.6);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)7
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     }
 
 Now we have a nice rounded profile picture, but it's aligned to the left of the screen. Add the CSS styles below to correct the alignment your profile picture. Although this will help us to center the profile picture, we are actually going to apply this style to the entire profile container so lets place this css before the '.profile-pic img' css rule set
 
     .profile-pic {
         display: flex;
-        justify-content:center;
+        justify-content:center
     }
 
 ## Midpoint Check-In
